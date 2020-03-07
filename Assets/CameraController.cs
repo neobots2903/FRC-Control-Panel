@@ -17,8 +17,6 @@ public class CameraController : MonoBehaviour {
 
         transform.Translate(new Vector3(Input.GetAxis("hori")* panCoefficient, Input.GetAxis("vert") * panCoefficient, Input.GetAxis("scroll") * zoomCoefficient));
 
-        Debug.Log(Input.GetAxis("scroll"));
-
         if (Input.GetKeyDown("space")) {
             transform.SetPositionAndRotation(new Vector3(0, 5, 0), Quaternion.Euler(90, 0, 0));
         }
